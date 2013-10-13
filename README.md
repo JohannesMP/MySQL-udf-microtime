@@ -5,6 +5,12 @@ This is a user defined function (UDF) for MySQL to add a microtime function.
 It is based on Vincent Sweeney's "[udf_microtime][micro]" UDF
 And Baron Schwartz' "[now_usec][usec]" UDF.
 
+All Feedback is appreciated.
+
+
+Feel free to contact me on [Twitter]
+
+
 ## Installation
 
 1. First you will need the `mysql_udf_microtime.so` file, which you can either compile yourself or download.
@@ -53,3 +59,4 @@ Delete the corresponding entry there named "microtime" and restart your mysql in
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
 [download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
+[twitter]: http://twitter.com/jo_shadow
