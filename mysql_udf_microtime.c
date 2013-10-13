@@ -2,10 +2,10 @@
 	MySQL UDF equivalent of the PHP microtime() function
 	----
 
-	Contributor				: Johannes Peter
-	Contributor Email		: johannes@carnotinteractive.com
+	Contributor		: Johannes Peter
+	Contributor Email	: johannes@carnotinteractive.com
 	---
-	Original Author			: Vincent Sweeney
+	Original Author		: Vincent Sweeney
 	Original Author Email	: vince@quakenet.co.uk
 	----
 
