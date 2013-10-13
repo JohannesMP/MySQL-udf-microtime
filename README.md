@@ -2,8 +2,8 @@
 
 This is a user defined function (UDF) for MySQL to add a microtime function.
 
-It is based on Vincent Sweeney's ["udf_microtime"][micro] UDF
-And Baron Schwartz' ["now_usec"][usec]UDF.
+It is based on Vincent Sweeney's "[udf_microtime][micro]" UDF
+And Baron Schwartz' "[now_usec][usec]" UDF.
 
 ## Installation
 
@@ -15,7 +15,7 @@ And Baron Schwartz' ["now_usec"][usec]UDF.
 
 ### Downloading
 
-   to be added...
+You can download the precompiled UDF .so file [Here][download]!
 
 
 2. Once you have mysql_udf_microtime.so you need to find out where your mysql installation's plugin directory is located:
@@ -43,3 +43,4 @@ the function is located in the mysql database in the func table. Delete the corr
 
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
+[download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
