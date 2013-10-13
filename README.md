@@ -52,7 +52,7 @@ Feel free to contact me on [Twitter]
 
 ## Uninstalling
 
-The function is located in the mysql database in the func table.
+The function is located in the default `mysql` database, within the `func` table.
 Delete the corresponding entry there named "microtime" and restart your mysql installation.
 
 
