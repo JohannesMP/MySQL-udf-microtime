@@ -9,15 +9,14 @@ And Baron Schwartz' "[now_usec][usec]" UDF.
 
 1. First you will need the mysql_udf_microtime.so file, which you can either compile yourself or download.
 
-### Compiling
+ ### Compiling
 
-    g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c
+     g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c
 
-### Downloading
+ ### Downloading
 
-You can download the precompiled UDF .so file [Here][download]!
+ You can download the precompiled UDF .so file [Here][download]!
 
-=================
 
 2. Once you have mysql_udf_microtime.so you need to find out where your mysql installation's plugin directory is located:
     
