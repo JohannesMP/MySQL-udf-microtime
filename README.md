@@ -28,12 +28,12 @@ And Baron Schwartz' ["now_usec"][usec]UDF.
 
 4. create a function named "microtime" pointing to the correct SONAME:
 
-			mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';
+    mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';
 
 
 5.  test that the function is working:
 
-			mysql>SELECT microtime();
+    mysql>SELECT microtime();
 
 
 ## uninstalling the function
