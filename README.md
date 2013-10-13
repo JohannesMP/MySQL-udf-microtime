@@ -7,40 +7,41 @@ And Baron Schwartz' "[now_usec][usec]" UDF.
 
 ## Installation
 
-1. First you will need the mysql_udf_microtime.so file, which you can either compile yourself or download.
+1. First you will need the `mysql_udf_microtime.so` file, which you can either compile yourself or download.
 
  =================
  ### Compiling
 
-     g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c
+ <pre>g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c</pre>
 
  ### Downloading
 
- You can download the precompiled UDF .so file [Here][download]!
+ You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download]!
  
  =================
 
-2. Once you have mysql_udf_microtime.so you need to find out where your mysql installation's plugin directory is located:
+2. Once you have `mysql_udf_microtime.so` you need to find out where your mysql installation's plugin directory is located:
     
-    mysql>SHOW VARIABLES LIKE 'plugin_dir';
+   <pre>mysql>SHOW VARIABLES LIKE 'plugin_dir';</pre>
     
     
-3. Move mysql_udf_microtime.so into the plugin_dir.
+3. Move `mysql_udf_microtime.so` into the plugin_dir.
 
 
 4. create a function named "microtime" pointing to the correct SONAME:
 
-    mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';
+   <pre>mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';</pre>
 
 
 5.  test that the function is working:
 
-    mysql>SELECT microtime();
+   <pre>mysql>SELECT microtime();</pre>
 
 
-## uninstalling the function
+## Uninstalling
 
-the function is located in the mysql database in the func table. Delete the corresponding entry there named "microtime" and restart your mysql installation.
+The function is located in the mysql database in the func table.
+Delete the corresponding entry there named "microtime" and restart your mysql installation.
 
 
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
