@@ -14,7 +14,7 @@
 			mysql>SHOW VARIABLES LIKE 'plugin_dir';
 		2. cd into the folder and compile the .so file with
 			g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c
-		3. move microtime.so into the plugin_dir.
+		3. move mysql_udf_microtime.so into the plugin_dir.
 		4. create the function in the mysql console:
 			mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';
 		5. test function in mysql console:
