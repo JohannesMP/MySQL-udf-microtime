@@ -34,12 +34,12 @@ Feel free to contact me on [Twitter]
 3. Move `mysql_udf_microtime.so` into the plugin_dir.
 
 
-4. create a function named "microtime" pointing to the correct SONAME:
+4. Create a function named "microtime" pointing to the correct SONAME:
 
    <pre>mysql> CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';</pre>
 
 
-5.  test that the function is working:
+5.  Test that the function is working:
 
    <pre>mysql> SELECT microtime();
 +-------------------+
