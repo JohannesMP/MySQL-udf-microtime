@@ -22,7 +22,7 @@ And Baron Schwartz' "[now_usec][usec]" UDF.
 
 2. Once you have `mysql_udf_microtime.so` you need to find out where your mysql installation's plugin directory is located:
     
-   <pre>mysql>SHOW VARIABLES LIKE 'plugin_dir';</pre>
+   <pre>mysql> SHOW VARIABLES LIKE 'plugin_dir';</pre>
     
     
 3. Move `mysql_udf_microtime.so` into the plugin_dir.
@@ -30,12 +30,18 @@ And Baron Schwartz' "[now_usec][usec]" UDF.
 
 4. create a function named "microtime" pointing to the correct SONAME:
 
-   <pre>mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';</pre>
+   <pre>mysql> CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';</pre>
 
 
 5.  test that the function is working:
 
-   <pre>mysql>SELECT microtime();</pre>
+   <pre>mysql> SELECT microtime();
++-------------------+
+| microtime()       |
++-------------------+
+| 1381691615.417104 |
++-------------------+
+1 row in set (0.00 sec)</pre>
 
 
 ## Uninstalling
