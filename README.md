@@ -8,6 +8,7 @@ And Baron Schwartz' "[now_usec][usec]" UDF.
 ## Installation
 
 1. First you will need the mysql_udf_microtime.so file, which you can either compile yourself or download.
+
  =================
  ### Compiling
 
