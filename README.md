@@ -22,7 +22,7 @@ Feel free to contact me on [Twitter]
 
  ### Downloading
 
- You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download]!
+ You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download], just click `Raw`.
  
  =================
 
@@ -58,5 +58,5 @@ Delete the corresponding entry there named "microtime" and restart your mysql in
 
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
-[download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
+[download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/blob/master/mysql_udf_microtime.so
 [twitter]: http://twitter.com/jo_shadow
