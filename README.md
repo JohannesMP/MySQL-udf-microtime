@@ -52,7 +52,7 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 5.  Test that the function is working:
 
-   <pre>mysql> SELECT microtime();
+   <pre>mysql> SELECT MICROTIME();
 +-------------------+
 | microtime()       |
 +-------------------+
