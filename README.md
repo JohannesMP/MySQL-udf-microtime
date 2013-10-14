@@ -2,7 +2,7 @@
 
 This is a user defined function (**UDF**) for MySQL **5.5.*** to add a microtime function:
 
-<a href="http://i.imgur.com/eAjaexj.png"><img src="http://i.imgur.com/eAjaexj.png"/></a>
+<a href="http://i.imgur.com/is2SVTR.png"><img src="http://i.imgur.com/is2SVTR.png"/></a>
 
 
 It is based on UDFs "[udf_microtime][micro]" by Vincent Sweeney
