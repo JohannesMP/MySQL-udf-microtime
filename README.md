@@ -10,19 +10,30 @@ And "[now_usec][usec]" by Baron Schwartz.
 
 All Feedback is appreciated - Feel free to contact me on [Twitter].
 
+## Dependencies
+
+1. [Mysql 5.5.*][mysql]
+2. g++ compiler (included in xcode via additional 'Command Line Tools' download)
+
 
 ## Installation
 
-1. First you will need the `mysql_udf_microtime.so` file, which you can either compile yourself or download.
+1. First you will need the `mysql_udf_microtime.so` file, which you can either **compile** yourself or **download**:
 
  =================
- ### Compiling
+ ### Compile (on mac, should work on linux as well)
+
+ Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
 
  <pre>g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c</pre>
 
- ### Downloading
+ `mysql_udf_microtime.so` should be created.
+ 
+ If you run into problems mace sure you have g++ and 
 
- You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download], just click `Raw`.
+ ### Download
+
+ You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download], just click `Raw` or `View Raw`.
  
  =================
 
@@ -56,6 +67,7 @@ The function is located in the default `mysql` database, within the `func` table
 Delete the corresponding entry there named "microtime" and restart your mysql installation.
 
 
+[mysql]:http://dev.mysql.com/downloads/mysql/
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
 [download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/blob/master/mysql_udf_microtime.so
