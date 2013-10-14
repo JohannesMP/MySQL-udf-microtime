@@ -18,7 +18,7 @@
 		4. create the function in the mysql console:
 			mysql>CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';
 		5. test function in mysql console:
-			mysql>SELECT microtime();
+			mysql>SELECT MICROTIME();
 
 */
 
