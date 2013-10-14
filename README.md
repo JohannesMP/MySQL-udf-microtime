@@ -1,6 +1,6 @@
 #MySQL-udf-microtime
 
-This is a user defined function (UDF) for MySQL to add a microtime function:
+This is a user defined function (UDF) for MySQL +5.5.* to add a microtime function:
 
 <a href="http://i.imgur.com/eAjaexj.png"><img src="http://i.imgur.com/eAjaexj.png"/></a>
 
