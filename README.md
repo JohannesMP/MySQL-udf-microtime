@@ -1,14 +1,14 @@
 #MySQL-udf-microtime
 
-This is a user defined function (UDF) for MySQL to add a microtime function.
+This is a user defined function (UDF) for MySQL to add a microtime function:
+
+<a href="http://i.imgur.com/eAjaexj.png"><img src="http://i.imgur.com/eAjaexj.png"/></a>
+
 
 It is based on Vincent Sweeney's "[udf_microtime][micro]" UDF
 And Baron Schwartz' "[now_usec][usec]" UDF.
 
-All Feedback is appreciated.
-
-
-Feel free to contact me on [Twitter]
+All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 
 ## Installation
