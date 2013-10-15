@@ -6,7 +6,7 @@ This is a user defined function (**UDF**) for MySQL **5.5.*** to add a microtime
 
 
 It is based on UDFs "[udf_microtime][micro]" by Vincent Sweeney
-And "[now_usec][usec]" by Baron Schwartz.
+And "[now_usec][usec]" by Baron Schwartz, With additional thanks to Justin Swanhart for [this article][swanhart].
 
 All Feedback is appreciated - Feel free to contact me on [Twitter].
 
@@ -70,5 +70,6 @@ Delete the corresponding entry there named "microtime" and restart your mysql in
 [mysql]:http://dev.mysql.com/downloads/mysql/
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
+[swanhart]:http://swanhart.livejournal.com/116981.html
 [download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
 [twitter]: http://twitter.com/jo_shadow
