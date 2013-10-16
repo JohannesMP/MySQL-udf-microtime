@@ -1,14 +1,24 @@
 #MySQL-udf-microtime
 
-This is a user defined function (**UDF**) for MySQL **5.5.*** to add a microtime function:
+### Microtime in MySQL 5.5.*
+
+A [User-Defined Function][UDF] For Mysql 5.5.* that adds microtime support.
 
 <a href="http://i.imgur.com/GMw5tit.png"><img src="http://i.imgur.com/GMw5tit.png"/></a>
 
+### It is much faster than SYSDATE()
 
-It is based on UDFs "[udf_microtime][micro]" by Vincent Sweeney
-And "[now_usec][usec]" by Baron Schwartz, With additional thanks to Justin Swanhart for [this article][swanhart].
+<a href="http://i.imgur.com/tR4hjD3.png"><img src="http://i.imgur.com/tR4hjD3.png"/></a>
+
+
+## About
+
+**MySQL-udf-microtime** is based on UDFs "[udf_microtime][micro]" by Vincent Sweeney
+And "[now_usec][usec]" by Baron Schwartz, With additional thanks to [Justin Swanhart][swanhart].
 
 All Feedback is appreciated - Feel free to contact me on [Twitter].
+
+
 
 ## Dependencies
 
@@ -66,7 +76,7 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 The function is located in the default `mysql` database, within the `func` table.
 Delete the corresponding entry there named "microtime" and restart your mysql installation.
 
-
+[UDF]:http://dev.mysql.com/doc/refman/5.5/en/create-function-udf.html
 [mysql]:http://dev.mysql.com/downloads/mysql/
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
