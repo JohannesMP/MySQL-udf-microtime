@@ -6,7 +6,7 @@ A [User-Defined Function][UDF] For Mysql 5.5.* that adds microtime support.
 
 <a href="http://i.imgur.com/GMw5tit.png"><img src="http://i.imgur.com/GMw5tit.png"/></a>
 
-### It is much faster than SYSDATE()
+### It is an order of magnitude faster than SYSDATE()
 
 <a href="http://i.imgur.com/tR4hjD3.png"><img src="http://i.imgur.com/tR4hjD3.png"/></a>
 
