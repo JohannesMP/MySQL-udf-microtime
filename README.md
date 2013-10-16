@@ -73,8 +73,7 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 ## Uninstalling
 
-The function is located in the default `mysql` database, within the `func` table.
-Delete the corresponding entry there named "microtime" and restart your mysql installation.
+   <pre>mysql> DROP FUNCTION microtime;</pre>
 
 [UDF]:http://dev.mysql.com/doc/refman/5.5/en/create-function-udf.html
 [mysql]:http://dev.mysql.com/downloads/mysql/
