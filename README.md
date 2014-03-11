@@ -92,7 +92,7 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 ## Uninstalling
 
- 1. <pre>mysql> DROP FUNCTION microtime;</pre>
+ 1. In Mysql run: <pre>mysql> DROP FUNCTION microtime;</pre>
  2. delete the `mysql_udf_microtime.so` from the plugin_dir (the one from the installation)
 
 [UDF]:http://dev.mysql.com/doc/refman/5.5/en/create-function-udf.html
