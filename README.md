@@ -6,9 +6,14 @@ A [User-Defined Function][UDF] For Mysql 5.5.* that adds microtime support.
 
 <a href="http://i.imgur.com/GMw5tit.png"><img src="http://i.imgur.com/GMw5tit.png"/></a>
 
-### It is an order of magnitude faster than SYSDATE()
+### How does it scale up to other MySQL time functions?
 
-<a href="http://i.imgur.com/tR4hjD3.png"><img src="http://i.imgur.com/tR4hjD3.png"/></a>
+100,000,000 executions with `BENCHMARK()` on 2.7GHz Intel Core i5:
+
+	SELECT BENCHMARK(100000000,NOW()); -- 1.64s
+	SELECT BENCHMARK(100000000,UNIX_TIMESTAMP()); -- 1.81s
+	SELECT BENCHMARK(100000000,MICROTIME()); -- 30.1s
+	SELECT BENCHMARK(100000000,SYSDATE()); -- 148s
 
 
 ## About
