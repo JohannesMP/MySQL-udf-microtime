@@ -31,7 +31,7 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 1. First you will need the `mysql_udf_microtime.so` file, which you can either **compile** yourself or **download**:
 
  =================
- ### Compile (on mac, should work on linux as well)
+ ### Compile - Mac
 
  Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
 
@@ -39,11 +39,17 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
  `mysql_udf_microtime.so` should be created.
  
- If you run into problems mace sure you have g++ and 
+ ### Compile - Linux
+ 
+ Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
+ 
+  <pre>gcc -fPIC -Wall -I/usr/include/mysql -shared -o mysql_udf_microtime.so mysql_udf_microtime.c</pre>
+ 
+ `mysql_udf_microtime.so` should be created.
 
- ### Download
+ ### Download - Mac
 
- You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download].
+ You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download-mac].
  
  =================
 
@@ -80,5 +86,5 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 [micro]:https://bitbucket.org/vinces/udf-microtime/src/bd48df4d4020/udf_microtime.c
 [usec]:http://www.xaprb.com/blog/2007/10/30/how-i-built-the-now_usec-udf-for-mysql/
 [swanhart]:http://swanhart.livejournal.com/116981.html
-[download]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
+[download-mac]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/mysql_udf_microtime.so
 [twitter]: http://twitter.com/jo_shadow
