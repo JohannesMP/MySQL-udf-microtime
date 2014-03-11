@@ -20,53 +20,28 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 
 
-## Dependencies
 
-1. [Mysql 5.5.*][mysql]
-2. g++ compiler (included in xcode via additional 'Command Line Tools' download)
-
-
-## Installation
-
-1. First you will need the `mysql_udf_microtime.so` file, which you can either **compile** yourself or **download**:
-
- =================
- ### Compile - Mac
-
- Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
-
- <pre>g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c</pre>
-
- `mysql_udf_microtime.so` should be created.
- 
- ### Compile - Linux
- 
- Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
- 
-  <pre>gcc -fPIC -Wall -I/usr/include/mysql -shared -o mysql_udf_microtime.so mysql_udf_microtime.c</pre>
- 
- `mysql_udf_microtime.so` should be created.
-
- ### Download - Mac
+## Download
 
  You can download the precompiled `mysql_udf_microtime.so` UDF file [Here][download-mac].
  
- =================
+ 
+## Install
 
-2. Once you have `mysql_udf_microtime.so` you need to find out where your mysql installation's plugin directory is located:
+1. Once you have `mysql_udf_microtime.so` you need to find out where your mysql installation's plugin directory is located:
     
    <pre>mysql> SHOW VARIABLES LIKE 'plugin_dir';</pre>
     
     
-3. Move `mysql_udf_microtime.so` into the plugin_dir.
+2. Move `mysql_udf_microtime.so` into the plugin_dir.
 
 
-4. Create a function named "microtime" pointing to the correct SONAME:
+3. Create a function named "microtime" pointing to the correct SONAME:
 
    <pre>mysql> CREATE FUNCTION microtime RETURNS REAL SONAME 'mysql_udf_microtime.so';</pre>
 
 
-5.  Test that the function is working:
+4.  Test that the function is working:
 
    <pre>mysql> SELECT MICROTIME();
 +-------------------+
@@ -75,11 +50,47 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 | 1381691615.417104 |
 +-------------------+
 1 row in set (0.00 sec)</pre>
+ 
 
+
+## Compile From Source
+
+ You can Downloade the source file `mysql_udf_microtime.c` and compile it yourself:
+
+#### Mac Dependencies
+ 1. [Mysql 5.5.*][mysql]
+ 2. g++ compiler (included in xcode via additional 'Command Line Tools' download)
+
+#### Compiling on Mac
+
+ Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
+
+<pre>g++ -Wall -bundle -bundle_loader /usr/local/mysql/bin/mysqld -o mysql_udf_microtime.so `/usr/local/mysql/bin/mysql_config --cflags` mysql_udf_microtime.c</pre>
+
+ `mysql_udf_microtime.so` should be created in your current directory.
+
+========= 
+
+#### Linux Dependencies 
+ 1. [Mysql 5.5.*][mysql]
+ 2. gcc compiler
+
+#### Compiling on Linux
+
+ Downloade the source file `mysql_udf_microtime.c`,  `cd` into its directory and then run:
+ 
+ <pre>gcc -fPIC -Wall -I/usr/include/mysql -shared -o mysql_udf_microtime.so mysql_udf_microtime.c</pre>
+ 
+ `mysql_udf_microtime.so` should be created in your current directory.
+
+
+
+========= 
 
 ## Uninstalling
 
-   <pre>mysql> DROP FUNCTION microtime;</pre>
+ 1. <pre>mysql> DROP FUNCTION microtime;</pre>
+ 2. delete the `mysql_udf_microtime.so` from the plugin_dir (the one from the installation)
 
 [UDF]:http://dev.mysql.com/doc/refman/5.5/en/create-function-udf.html
 [mysql]:http://dev.mysql.com/downloads/mysql/
