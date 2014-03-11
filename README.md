@@ -30,8 +30,8 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
  You can download the precompiled `mysql_udf_microtime.so` UDF file:
  
- * [Mac .so][download-mac]
- * [Linux .so][download-lin]
+ * [Download For Mac][download-mac]
+ * [Download For Windows][download-lin]
  
  
 ## Install
