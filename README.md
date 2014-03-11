@@ -8,7 +8,7 @@ A [User-Defined Function][UDF] For Mysql 5.5.* that adds microtime support.
 
 ### How does it scale up to other MySQL time functions?
 
-100,000,000 executions with `BENCHMARK()` on 2.7GHz Intel Core i5:
+100,000,000 executions with `BENCHMARK()` on 2.7GHz Intel Core i5 with Local MySQL 5.5.29:
 
 	SELECT BENCHMARK(100000000,NOW()); -- 1.64s
 	SELECT BENCHMARK(100000000,UNIX_TIMESTAMP()); -- 1.81s
