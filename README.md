@@ -108,3 +108,10 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 [download-mac]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/compiled_mac/mysql_udf_microtime.so
 [download-lin]:https://github.com/CarnotInteractive/MySQL-udf-microtime/raw/master/compiled_linux/mysql_udf_microtime.so
 [twitter]: http://twitter.com/jo_shadow
+
+
+========= 
+
+## License
+
+This UDF is open source and free to use for anyone under the MIT license.
