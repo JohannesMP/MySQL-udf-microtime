@@ -93,7 +93,6 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 
 
 
-========= 
 
 ## Uninstalling
 
@@ -110,7 +109,6 @@ All Feedback is appreciated - Feel free to contact me on [Twitter].
 [twitter]: http://twitter.com/jo_shadow
 
 
-========= 
 
 ## License
 
